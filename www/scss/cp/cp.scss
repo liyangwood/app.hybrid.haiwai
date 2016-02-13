@@ -6,7 +6,7 @@
 
 .cp-site-nav{
 	background: #ffffff;
-	height: 196px;
+	height: 191px;
 	.row{
 		height: 98px;
 		padding: 0;
@@ -26,11 +26,14 @@
 			img{
 				width: 25px;
 				height: 32px;
-				margin-top: 20px;
+				margin-top: 24px;
 			}
 			b{
 				display: block;
-				font-size: 12px;
+				margin-top: 4px;
+				font-size: 9px;
+				overflow: hidden;
+				height: 20px;
 			}
 		}
 	}

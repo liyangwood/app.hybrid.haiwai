@@ -28,6 +28,9 @@
     <script src="js/directive/site.js"></script>
 
 
+    <script src="js/controller/root.js"></script>
+
+
   <script src="site/home.js"></script>
 
 
@@ -38,6 +41,33 @@
 <hw-site-home-header></hw-site-home-header>
 <ion-content class="hw-content">
 	<hw-site-home-top-nav></hw-site-home-top-nav>
+
+	<div style="margin-top: 20px;" class="list hw-home-coupon-list">
+		<div class="item cp-head">
+			热门优惠
+			<a href="" class="item-note">
+			  	全部优惠
+			</a>
+		</div>
+		<a class="item item-thumbnail-left cp-item" ng-repeat="item in couponList">
+			<img ng-src="{{::item.img}}" />
+			<h2>
+				{{::item.name}}
+				<span>{{::item.location}}</span>
+			</h2>
+			<p class="cp-p">{{::item.coupon}}</p>
+			<p class="cp-sp">{{::item.num}}人领取</p>
+		</a>
+	</div>
+
+	<div style="margin-top: 20px;" class="list hw-home-coupon-list">
+		<div class="item cp-head">
+			新店入驻
+		</div>
+	</div>
+
+	<a class="hw-btn hw-light-button" style="margin: 30px 25px;">创建我的店铺</a>
+
 </ion-content>
 
 
